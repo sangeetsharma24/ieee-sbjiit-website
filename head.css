@@ -18,8 +18,8 @@ body {
 }
 
 .header {
-  padding: 0 2.4rem;
-  height: 8rem;
+  padding: 0.5rem 5rem;
+  /* height: 8rem; */
   opacity: 1;
   display: flex;
   justify-content: space-between;
@@ -27,13 +27,19 @@ body {
   background-color: transparent;
   font-size: 1rem;
   position: fixed;
+  width: 100%;
   z-index: 2;
+  /* background: #21252963; */
+}
+
+.header.scrolled {
+  background-color: #ffffff95 !important;
+  transition: background-color 400ms linear;
 }
 
 .logo{
-  position: fixed;
-  right: 4%;
-  top: 4%;
+  width: 8rem;
+  padding: 1rem;
 }
 
 .navbar-list {
@@ -56,16 +62,13 @@ body {
 .navbar-link:hover,
 .navbar-link:active {
   color: #364fc7;
-  font-size: larger;
+  transform: scale(1.2);
 }
 
 .mobile-navbar-btn {
   display: none;
   background: transparent;
   cursor: pointer;
-  top: 5%;
-  position: fixed;
-  left: 85%;
 }
 
 .mobile-nav-icon {
@@ -116,6 +119,8 @@ Responsive Codes
 
   .header {
     position: relative;
+    align-items: center;
+    padding: 0.5rem 2.4rem;
   }
 
   .logo{

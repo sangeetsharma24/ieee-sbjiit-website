@@ -5,7 +5,8 @@
     font-family: 'Montserrat', sans-serif;
 }
 .footer{
-	background-image: linear-gradient(to right top, #373B44,#4286f4);
+	/* background-image: linear-gradient(to right top, #373B44,#4286f4);  */
+	background: rgba(0, 0, 0, 0.43); 
 	color: #f9f1e9;
 }
 .footer .left{
