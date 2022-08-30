@@ -27,6 +27,13 @@ body {
   background-color: transparent;
   font-size: 1rem;
   position: fixed;
+  z-index: 2;
+}
+
+.logo{
+  position: fixed;
+  right: 4%;
+  top: 4%;
 }
 
 .navbar-list {
@@ -56,6 +63,9 @@ body {
   display: none;
   background: transparent;
   cursor: pointer;
+  top: 5%;
+  position: fixed;
+  left: 85%;
 }
 
 .mobile-nav-icon {
@@ -109,7 +119,9 @@ Responsive Codes
   }
 
   .logo{
-    left:2%;
+    left:3.5%;
+    height: 8rem;
+    width: 7rem;
   }
 
   .navbar {
@@ -120,7 +132,6 @@ Responsive Codes
     position: absolute;
     top: 0;
     left: 0;
-
     display: flex;
     justify-content: center;
     align-items: center;
