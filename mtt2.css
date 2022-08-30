@@ -3,11 +3,13 @@ html {
 }
 
 body {
-    background-image: url(/images/brady-bellini-WEQbe2jBg40-unsplash.jpg);
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    background-image: url("https://media.istockphoto.com/vectors/blank-empty-faded-vector-backgrounds-in-pale-light-sky-blue-colour-vector-id1333578320?k=20&m=1333578320&s=612x612&w=0&h=mDvPcpW_tYiFjDcQT723pBHmPqU0uQJAMvUAbCXY1-k=");
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    padding: 50px;
 }
 
 .main_heading {
@@ -62,6 +64,10 @@ body {
 .people__img {
     width: 100%;
     height: 350px;
+    margin: 0 auto;
+    display: block;
+    object-fit: cover;
+    object-position: center;
     transform-origin: center;
     transition: all 0.6s;
 }
@@ -80,9 +86,14 @@ body {
 
 .people__div--name {
     background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
     bottom: 3%;
+    left: 0;
+    width: 100%;
     max-width: 300px;
     opacity: 0.8;
+    line-height: 1;
+    padding: 0 20px;
     transition: all 0.6s;
 }
 
