@@ -23,10 +23,11 @@ li,
 p,
 a,
 button {
+	font-family: 'Poppins', sans-serif;
 	color: white;
 }
 h2 {
-	font-family: 'Cormorant Garamond', serif;
+	font-family: 'Poppins', sans-serif;
 	font-weight: 300;
 }
 
@@ -102,8 +103,10 @@ h2 {
 }
 .body {
 	margin-top: 0.7rem;
+	font-family: 'Poppins', sans-serif;
 	opacity: 0;
 	line-height: 27px;
+	font-size: 2rem;
 }
 .info {
 	transform: translateY(-150px);
