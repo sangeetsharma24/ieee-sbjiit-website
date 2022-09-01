@@ -32,7 +32,9 @@ body {
 }
 
 .about-left-content>div {
-    background: #12192c;
+    /*background: #12192c;*/
+    background: rgb(10,25,42);
+    background: radial-gradient(circle, rgba(10,25,42,0.45451684091605393) 0%, rgba(7,12,47,1) 100%);
     padding: 4rem 4rem 2.5rem 5rem;
     text-align: center;
     border-radius: 12px 12px 0 0;
