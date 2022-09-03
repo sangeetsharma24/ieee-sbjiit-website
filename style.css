@@ -50,7 +50,7 @@ path {
 .card:hover h1 {
   color: #f8f9fc;
 }
-.card:hover button {
+.card:hover a {
   background-color: #477ef9;
   color: #f8f9fc;
 }
@@ -81,7 +81,7 @@ path {
   z-index: 1;
   transition: all 0.4s cubic-bezier(0.56, 0.01, 0, 0.99) 0.025s;
 }
-.card button {
+.card a {
   padding: 1rem 2.5rem;
   color: #7dc3b3;
   background-color: #fff;
@@ -95,7 +95,7 @@ path {
   transition: all 0.2s cubic-bezier(0.56, 0.01, 0, 0.99);
   cursor: pointer;
 }
-.card button:hover {
+.card a:hover {
   background-color: #3c4cc7;
   border: 2px solid #3c4cc7;
 }
