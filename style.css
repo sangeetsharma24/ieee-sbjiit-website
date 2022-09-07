@@ -32,16 +32,10 @@ background-size: cover;
   transform: scale(1.03);
   box-shadow: 0px 10px 16px -9px rgba(41, 48, 86, 0.6);
 }
-
 .card:hover .chip {
   background-color: #3c4cc7;
   color: #f8f9fc;
   transition: all 0.4s cubic-bezier(0.56, 0.01, 0, 0.99) 0.075s;
-}
-
-.card:hover h3 {
-  z-index: 1;
-  color: white;
 }
 .card:hover .chip svg &gt;
 path {
@@ -50,7 +44,7 @@ path {
 .card:hover h1 {
   color: #f8f9fc;
 }
-.card:hover a {
+.card:hover button {
   background-color: #477ef9;
   color: #f8f9fc;
 }
@@ -60,10 +54,10 @@ path {
 .card .chip {
   display: flex;
   max-width: fit-content;
-  padding: 0.5rem 0.75rem;
+  padding: 8px 12px;
   font-weight: 450;
   color: #477ef9;
-  gap: 0.5rem;
+  gap: 8px;
   background-color: #e8efff;
   border-radius: 4px;
   z-index: 1;
@@ -81,7 +75,7 @@ path {
   z-index: 1;
   transition: all 0.4s cubic-bezier(0.56, 0.01, 0, 0.99) 0.025s;
 }
-.card a {
+.card button {
   padding: 1rem 2.5rem;
   color: #7dc3b3;
   background-color: #fff;
@@ -95,7 +89,7 @@ path {
   transition: all 0.2s cubic-bezier(0.56, 0.01, 0, 0.99);
   cursor: pointer;
 }
-.card a:hover {
+.card button:hover {
   background-color: #3c4cc7;
   border: 2px solid #3c4cc7;
 }
@@ -118,6 +112,8 @@ path {
   font-size: 1.5rem;;
 }
 
+
+
 .nav{
     color:black;
 }
@@ -130,7 +126,7 @@ path {
   .text{
     color: white;
       border-right: 2px solid white;
-      font-size: 4rem;
+      font-size: 3.125rem;
       font-family: 'Merriweather', serif;
 
   }

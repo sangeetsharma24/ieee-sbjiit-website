@@ -33,8 +33,7 @@ html {
 }
 
 .header.scrolled {
-  background-color: #ffffff !important;
-  opacity: 1;
+  background-color: #ffffff95 !important;
   transition: background-color 400ms linear;
 }
 
