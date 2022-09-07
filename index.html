@@ -6,6 +6,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!--Fav icon links start -->
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <!--Fav icon links end -->
 
   <!-- Fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,6 +22,9 @@
 
   <!--    Scripts   -->
   <script src="index.js" defer></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="header.js" defer></script>
   <script src="https://cdn.tailwindcss.com" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"
     integrity="sha512-BdHyGtczsUoFcEma+MfXc71KJLv/cd+sUsUaYYf2mXpfG/PtBjNXsPo78+rxWjscxUYN2Qr2+DbeGGiJx81ifg=="
@@ -40,6 +50,7 @@
 </head>
 
 <body text="#000000">
+  <div class="bg-black bg-opacity-40">
 
   <span id="top"></span>
   <!-- Navbar starts -->
@@ -47,12 +58,12 @@
     
     <nav class="navbar">
       <ul class="navbar-list">
-        <li><a class="navbar-link" href="#top">Home</a></li>
+        <li><a class="navbar-link home" href="#top">Home</a></li>
         <li><a class="navbar-link" href="aboutUs.html">About</a></li>
-        <li><a class="navbar-link" href="Meet_the_team.html" target="_blank">Team</a></li>
+        <li><a class="navbar-link" href="Meet_the_team.html">Team</a></li>
         <li><a class="navbar-link" href="slider.html">Events</a></li>
         <li>
-          <a class="navbar-link" href="#contact">Contact</a>
+          <a class="navbar-link contact" href="#contact">Contact</a>
         </li>
       </ul>
     </nav>
@@ -70,13 +81,15 @@
   <!--  Navbar ends  -->
   <div class="grid place-items-center py-60">
 
-    <div class="iam"><img class="w-3/12 mx-auto"
+    <div class="iam">
+      <img class="w-3/12 mx-auto"
         src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/bsmq8rbdsnijtp9hbtg5"
-        alt="" class="w-55"></div>
-    <div class="text-3xl text-white p-12">IEEE SBJIIT</div>
+        alt="" class="w-55">
+    </div>
+    <div class="text-4xl text-white p-12 font-bold">IEEE SB JIIT</div>
     <div class="text type py-10 leading-[0rem]" style="font-family: 'Merriweather', serif;"></div>
   </div>
-
+  
   <div class="card">
     <div class="chip">
 
@@ -85,17 +98,17 @@
     <h1>About us</h1>
     <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor maxime officiis ea labore doloribus dolores
       veritatis quis, enim quaerat voluptatum sunt commodi, ad vitae facilis soluta omnis ipsam quo doloremque.</h3>
-    <button><a href="aboutUs.html">Know more</a></button>
+    <a href="aboutUs.html"><button>Know more</button></a>
     <div class="accent-line"></div>
   </div>
 
   <div class="p-10 max-w-screen-xl mx-auto">
     <div class="text-center mb-16">
-      <p class="mt-4 text-sm leading-7 text-gray-500 font-regular">
+      <p class="mt-4 text-3xl mb-2 leading-7 text-white font-regular">
         IEEE Team
       </p>
-      <h3 class="text-3xl sm:text-4xl leading-normal font-extrabold tracking-tight text-gray-900">
-        Our<span class="text-indigo-600">Leads</span>
+      <h3 class="text-3xl sm:text-6xl leading-normal font-extrabold tracking-tight text-gray-900">
+        Our<span style="color:#024d9c ;">Leads</span>
       </h3>
     </div>
     <div class="sm:grid grid-cols-2 col-gap-10">
@@ -103,18 +116,18 @@
       <div class="max-w-sm w-full lg:max-w-full lg:flex mx-auto my-10">
         <div
           class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
-          style="background-image: url('yuvraj.png')" title="Woman holding a mug">
+          style="background-image: url('Team_Members/yuvraj.jpg')" >
         </div>
         <div
           class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4">
           <div class="">
             <a href="#"
-              class="text-gray-900 font-bold text-xl mb-2 hover:text-indigo-600 transition duration-500 ease-in-out">Yuvraj
+              class="text-gray-900 font-bold text-2xl mb-2 hover:text-indigo-600 transition duration-500 ease-in-out">Yuvraj
               Choudhary</a>
-            <p class="text-sm text-gray-600">
-              Chancellor
+            <p class="text-xl text-gray-600">
+              Chairperson
             </p>
-            <p class="text-gray-500 text-base mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <p class="text-gray-500 text-2xl mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 
             <div class="my-4 flex">
               <a href="#">
@@ -179,18 +192,18 @@
       <div class="max-w-sm w-full lg:max-w-full lg:flex mx-auto my-10">
         <div
           class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
-          style="background-image: url('parth.png')" title="Woman holding a mug">
+          style="background-image: url('Team_Members/parth.jpg')" title="Woman holding a mug">
         </div>
         <div
           class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4">
           <div class="">
             <a href="#"
-              class="text-gray-900 font-bold text-xl mb-2 hover:text-indigo-600 transition duration-500 ease-in-out">Parth
+              class="text-gray-900 font-bold text-2xl mb-2 hover:text-indigo-600 transition duration-500 ease-in-out">Parth
               Punia</a>
-            <p class="text-sm text-gray-600">
-              Vice Chancellor
+            <p class="text-xl text-gray-600">
+              Vice Chairperson
             </p>
-            <p class="text-gray-500 text-base mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <p class="text-gray-500 text-2xl mt-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 
             <div class="my-4 flex">
               <a href="#">
@@ -260,29 +273,29 @@
 
 
   <footer class="footer relative w-full" id="contact">
-    <div class="footerContainer flex flex-wrap justify-between py-12 px-16">
+    <div class="footerContainer flex flex-wrap justify-between py-12 px-8">
       <div class="left">
         <img src="https://xenith22.live/static/img/ieee-white.png" alt="logo" />
       </div>
-      <div class="center">
+      <div class="center mb-8 mt-9">
         <div class="test">
-          <h3 class="mb-8"><strong>Contact Us</strong></h3>
+          <h3 class="text-4xl lg:text-6xl mb-8 sm:text-2xl">Contact Us</h3>
           <div class="contact-details flex items-center text-base mt-3">
             <p class="my-1 mx-2"><i class="fa-solid fa-phone"></i></p>
-            <div class="my-1 mx-2 text-3xl">Yuvraj Chaudhary &nbsp;:&nbsp; +91 77788-88999</div>
+            <div class="my-1 mx-2 text-2xl lg:text-2xl">Yuvraj Chaudhary &nbsp;:&nbsp; +91 77788-88999</div>
           </div>
           <div class="contact-details flex items-center text-base mt-3">
             <p class="my-1 mx-2"><i class="fa-solid fa-phone"></i></p>
-            <div class="my-1 mx-2 text-3xl">Parth Punia &nbsp;:&nbsp; +91 77788-88999</div>
+            <div class="my-1 mx-2 text-2xl lg:text-2xl">Parth Punia &nbsp;:&nbsp; +91 77788-88999</div>
           </div>
           <div class="contact-details flex items-center text-base mt-3">
             <p class="my-1 mx-2"><i class="fa-solid fa-at"></i></p>
-            <div class="my-1 mx-2 text-3xl">Email &nbsp;:&nbsp; ieeesbjiitweb@gmail.com</div>
+            <div class="my-1 mx-2 text-2xl lg:text-2xl">Email &nbsp;:&nbsp; ieeesbjiitweb@gmail.com</div>
           </div>
         </div>
       </div>
       <div class="right h-full mr-10">
-        <h3 class="text-6xl mb-8">Connect with us</h3>
+        <h3 class="lg:text-5xl mb-8 text-4xl">Connect with us</h3>
         <div class="icons text-4xl">
           <img src="https://ieeesbjiit.github.io/img/clients/insta.png" alt="" class="inline-block my-0 mx-2 w-10" />
           <img src="https://ieeesbjiit.github.io/img/clients/fb.png" alt="" class="inline-block my-0 mx-2 w-10">
@@ -294,19 +307,16 @@
     </div>
   </footer>
 
-
+  </div>
 </body>
 
 <script>
   let typing = new Typed(".text", {
     strings: ["Student Branch JIIT", "Student Branch JIIT"],
-    typeSpeed: 100,
-    backSpeed: 40,
+    typeSpeed: 160,
+    backSpeed: 80,
     loop: true,
   });
 </script>
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-<script src="header.js"></script>
 
 </html>
